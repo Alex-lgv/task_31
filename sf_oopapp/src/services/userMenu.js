@@ -4,7 +4,6 @@ export const userButtonMenu = function () {
   const menuBtn = documentHTML().querySelector('.btn__menu');
   const menudisplay = documentHTML().querySelector('.menu');
   menuBtn.addEventListener('click', function (e) {
-    console.log('123');
     if (menuBtn.style.transform == 'rotate(180deg)') {
       menuBtn.style.transform = 'rotate(0deg)';
       menudisplay.style.display = 'none';
