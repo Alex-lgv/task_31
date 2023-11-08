@@ -1,0 +1,90 @@
+.btn__menu {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.dropdown-user-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.menu {
+  background-color: #fff;
+  list-style-type: none;
+  padding: 0;
+  width: 200px;
+  position: absolute;
+  right: -3px;
+  top: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 10px;
+  display: none;
+  z-index: 1;
+}
+
+.list-menu {
+  text-align: center;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-menu:hover {
+  background-color: #ebecf0;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+.link:hover {
+  font-size: 26px;
+  font-style: italic;
+  color: slategrey;
+}
+
+.list-menu-user:hover .menu-users {
+  display: block;
+}
+
+.menu-users {
+  right: 200px;
+  top: 80px;
+  height: 90px;
+}
+
+.user-delete {
+  color: black;
+}
+
+.button-delete-user,
+.button-add {
+  width: 180px;
+}
+
+.delete-id-user {
+  font-size: 20px;
+  width: 180px;
+  min-height: 45px;
+}
+
+.modal-title {
+  color: black;
+}
+
+.text-wrong {
+  color: red;
+  margin-bottom: 10px;
+}

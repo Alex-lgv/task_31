@@ -1,0 +1,86 @@
+<div class="kanban__main">
+  <div class="kanban__header">
+    <h2 class="kanban__header-text">Awesome Kanban Board</h2>
+    <div class="kanban__user-menu">
+      <span class="kanban__user-name"></span>
+      <img
+        src="/src/img/User.png"
+        class="kanban__user-image"
+        alt="User photo"
+      />
+      <nav class="dropdown-user-menu">
+        <button class="btn__menu">
+          <img src="../img/Arrow.svg" alt="Стрелка меню" />
+        </button>
+        <ul class="menu"></ul>
+      </nav>
+    </div>
+  </div>
+  <div class="kanban__div">
+    <div class="kanban__block" id="backlog">
+      <span>Backlog</span>
+      <ul class="dropdown-task-backlog"></ul>
+      <div class="task-button-block">
+        <input
+          type="text"
+          class="input__backlog"
+          placeholder="Please enter a new task!"
+        />
+        <button class="btn__backlog-add" type="button">+ Add card</button>
+      </div>
+    </div>
+    <div class="kanban__block" id="ready">
+      <span>Ready</span>
+      <ul class="dropdown-task-ready"></ul>
+      <div class="task-button-block">
+        <div class="dropdown">
+          <button class="btn__ready-add" type="button">+ Add card</button>
+          <div class="dropdown-content dropdown-content-backlog">
+            <span class="title-task">Задачи из Backlog</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="kanban__block" id="in-progress">
+      <span>In Progress</span>
+      <ul class="dropdown-task-progress"></ul>
+      <div class="task-button-block">
+        <div class="dropdown">
+          <button class="btn__progress-add" type="button">+ Add card</button>
+          <div class="dropdown-content dropdown-content-ready"></div>
+        </div>
+      </div>
+    </div>
+    <div class="kanban__block" id="finished">
+      <span>Finished</span>
+      <ul class="dropdown-task-finished"></ul>
+      <div class="task-button-block">
+        <div class="dropdown">
+          <button class="btn__finished-add" type="button">+ Add card</button>
+          <div class="dropdown-content dropdown-content-progress">
+            <span class="title-task">Задачи из In progress</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="kanban__footer">
+  <div class="tasks">
+    <div class="kanban-active-task">
+      Active tasks: <span class="backlog-lenght"></span>
+    </div>
+    <div class="kanban-finished-task">
+      Finished tasks: <span class="finished-lenght"></span>
+    </div>
+  </div>
+  <div class="kanban-cookies" style="font-style: italic">
+    To delete all cookies please tap "Home" button
+  </div>
+  <div class="tasks-name">
+    <div class="kanban-name-task">
+      Kanban board by <span class="name-footer"></span>,
+      <span class="year-footer"></span>
+    </div>
+  </div>
+</div>

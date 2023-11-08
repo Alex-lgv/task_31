@@ -1,0 +1,28 @@
+#btn__login {
+  width: 160px;
+}
+
+.container-board {
+  max-width: 1920px;
+  padding: 0;
+}
+
+#content {
+  margin: 0;
+}
+
+.alert {
+  display: flex;
+  justify-content: center;
+}
+
+.alert-secondary {
+  border-color: transparent;
+}
+
+#no-access {
+  font-size: larger;
+  font-weight: bolder;
+  font-style: italic;
+  color: dimgray;
+}
